@@ -1,0 +1,6 @@
+
+
+G:/computer/MYCPU/lpm_bustri0.vhd
+
+Dec 30 09PM:27:28>: Megafunction LPM_BUSTRI is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

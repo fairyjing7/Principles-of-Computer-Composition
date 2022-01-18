@@ -1,0 +1,569 @@
+Analysis & Synthesis report for ALU_MD
+Thu Dec 30 15:41:25 2021
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: LPM_LATCH:inst8
+ 12. Parameter Settings for User Entity Instance: lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component
+ 13. Parameter Settings for User Entity Instance: REG0_2:inst1|LPM_LATCH:inst4
+ 14. Parameter Settings for User Entity Instance: REG0_2:inst1|LPM_LATCH:inst5
+ 15. Parameter Settings for User Entity Instance: REG0_2:inst1|LPM_LATCH:inst6
+ 16. Parameter Settings for User Entity Instance: lpm_bustri0:inst6|lpm_bustri:lpm_bustri_component
+ 17. Parameter Settings for User Entity Instance: lpm_bustri0:inst3|lpm_bustri:lpm_bustri_component
+ 18. Parameter Settings for User Entity Instance: lpm_bustri0:inst4|lpm_bustri:lpm_bustri_component
+ 19. Parameter Settings for User Entity Instance: lpm_bustri0:inst5|lpm_bustri:lpm_bustri_component
+ 20. Parameter Settings for User Entity Instance: LPM_LATCH:inst9
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Dec 30 15:41:25 2021           ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
+; Revision Name                      ; ALU_MD                                          ;
+; Top-level Entity Name              ; ALU_MD                                          ;
+; Family                             ; Cyclone 10 LP                                   ;
+; Total logic elements               ; 421                                             ;
+;     Total combinational functions  ; 421                                             ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 67                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10CL055YF484I7G    ;                    ;
+; Top-level entity name                                                      ; ALU_MD             ; ALU_MD             ;
+; Family name                                                                ; Cyclone 10 LP      ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.1%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; my_alu.v                         ; yes             ; User Verilog HDL File              ; D:/quartus17setup/ProjectFile/Project6_3/my_alu.v                  ;         ;
+; REG0_2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/quartus17setup/ProjectFile/Project6_3/REG0_2.bdf                ;         ;
+; LDR0_2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/quartus17setup/ProjectFile/Project6_3/LDR0_2.bdf                ;         ;
+; ALU_MD.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/quartus17setup/ProjectFile/Project6_3/ALU_MD.bdf                ;         ;
+; lpm_latch.tdf                    ; yes             ; Megafunction                       ; d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf    ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; d:/quartus17setup/quartus/libraries/megafunctions/lpm_constant.inc ;         ;
+; lpm_bustri0.vhd                  ; yes             ; Auto-Found Wizard-Generated File   ; D:/quartus17setup/ProjectFile/Project6_3/lpm_bustri0.vhd           ;         ;
+; lpm_bustri.tdf                   ; yes             ; Megafunction                       ; d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf   ;         ;
+; 74139m.bdf                       ; yes             ; Megafunction                       ; d:/quartus17setup/quartus/libraries/others/maxplus2/74139m.bdf     ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 421         ;
+;                                             ;             ;
+; Total combinational functions               ; 421         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 191         ;
+;     -- 3 input functions                    ; 138         ;
+;     -- <=2 input functions                  ; 92          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 315         ;
+;     -- arithmetic mode                      ; 106         ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 67          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; M[21]~input ;
+; Maximum fan-out                             ; 77          ;
+; Total fan-out                               ; 1475        ;
+; Average fan-out                             ; 2.66        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Entity Name ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-------------+--------------+
+; |ALU_MD                                 ; 421 (2)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |ALU_MD                                                   ; ALU_MD      ; work         ;
+;    |LDR0_2:inst|                        ; 7 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|LDR0_2:inst                                       ; LDR0_2      ; work         ;
+;       |74139m:inst1|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|LDR0_2:inst|74139m:inst1                          ; 74139m      ; work         ;
+;       |74139m:inst2|                    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|LDR0_2:inst|74139m:inst2                          ; 74139m      ; work         ;
+;    |REG0_2:inst1|                       ; 27 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|REG0_2:inst1                                      ; REG0_2      ; work         ;
+;       |lpm_latch:inst4|                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|REG0_2:inst1|lpm_latch:inst4                      ; lpm_latch   ; work         ;
+;       |lpm_latch:inst5|                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|REG0_2:inst1|lpm_latch:inst5                      ; lpm_latch   ; work         ;
+;       |lpm_latch:inst6|                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|REG0_2:inst1|lpm_latch:inst6                      ; lpm_latch   ; work         ;
+;    |lpm_bustri0:inst2|                  ; 35 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|lpm_bustri0:inst2                                 ; lpm_bustri0 ; work         ;
+;       |lpm_bustri:lpm_bustri_component| ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component ; lpm_bustri  ; work         ;
+;    |lpm_bustri0:inst4|                  ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|lpm_bustri0:inst4                                 ; lpm_bustri0 ; work         ;
+;       |lpm_bustri:lpm_bustri_component| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|lpm_bustri0:inst4|lpm_bustri:lpm_bustri_component ; lpm_bustri  ; work         ;
+;    |lpm_bustri0:inst6|                  ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|lpm_bustri0:inst6                                 ; lpm_bustri0 ; work         ;
+;       |lpm_bustri:lpm_bustri_component| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|lpm_bustri0:inst6|lpm_bustri:lpm_bustri_component ; lpm_bustri  ; work         ;
+;    |lpm_latch:inst8|                    ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|lpm_latch:inst8                                   ; lpm_latch   ; work         ;
+;    |lpm_latch:inst9|                    ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|lpm_latch:inst9                                   ; lpm_latch   ; work         ;
+;    |my_alu:inst12|                      ; 329 (329)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU_MD|my_alu:inst12                                     ; my_alu      ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; lpm_latch:inst8|latches[7]                          ; inst10              ; yes                    ;
+; lpm_latch:inst9|latches[7]                          ; inst11              ; yes                    ;
+; lpm_latch:inst8|latches[6]                          ; inst10              ; yes                    ;
+; lpm_latch:inst9|latches[6]                          ; inst11              ; yes                    ;
+; lpm_latch:inst8|latches[5]                          ; inst10              ; yes                    ;
+; lpm_latch:inst9|latches[5]                          ; inst11              ; yes                    ;
+; lpm_latch:inst8|latches[4]                          ; inst10              ; yes                    ;
+; lpm_latch:inst9|latches[4]                          ; inst11              ; yes                    ;
+; lpm_latch:inst8|latches[3]                          ; inst10              ; yes                    ;
+; lpm_latch:inst9|latches[3]                          ; inst11              ; yes                    ;
+; lpm_latch:inst8|latches[2]                          ; inst10              ; yes                    ;
+; lpm_latch:inst9|latches[2]                          ; inst11              ; yes                    ;
+; lpm_latch:inst8|latches[1]                          ; inst10              ; yes                    ;
+; lpm_latch:inst9|latches[1]                          ; inst11              ; yes                    ;
+; lpm_latch:inst8|latches[0]                          ; inst10              ; yes                    ;
+; lpm_latch:inst9|latches[0]                          ; inst11              ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst4|latches[7]             ; REG0_2:inst1|inst   ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst4|latches[6]             ; REG0_2:inst1|inst   ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst4|latches[5]             ; REG0_2:inst1|inst   ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst4|latches[4]             ; REG0_2:inst1|inst   ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst4|latches[3]             ; REG0_2:inst1|inst   ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst4|latches[2]             ; REG0_2:inst1|inst   ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst4|latches[1]             ; REG0_2:inst1|inst   ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst4|latches[0]             ; REG0_2:inst1|inst   ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst5|latches[7]             ; REG0_2:inst1|inst1  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst6|latches[7]             ; REG0_2:inst1|inst2  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst5|latches[6]             ; REG0_2:inst1|inst1  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst6|latches[6]             ; REG0_2:inst1|inst2  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst5|latches[5]             ; REG0_2:inst1|inst1  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst6|latches[5]             ; REG0_2:inst1|inst2  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst5|latches[4]             ; REG0_2:inst1|inst1  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst6|latches[4]             ; REG0_2:inst1|inst2  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst5|latches[3]             ; REG0_2:inst1|inst1  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst6|latches[3]             ; REG0_2:inst1|inst2  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst5|latches[2]             ; REG0_2:inst1|inst1  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst6|latches[2]             ; REG0_2:inst1|inst2  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst5|latches[1]             ; REG0_2:inst1|inst1  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst6|latches[1]             ; REG0_2:inst1|inst2  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst5|latches[0]             ; REG0_2:inst1|inst1  ; yes                    ;
+; REG0_2:inst1|lpm_latch:inst6|latches[0]             ; REG0_2:inst1|inst2  ; yes                    ;
+; Number of user-specified and inferred latches = 40  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 31:1               ; 8 bits    ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |ALU_MD|my_alu:inst12|Mux1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_LATCH:inst8 ;
++----------------+--------+------------------------------------+
+; Parameter Name ; Value  ; Type                               ;
++----------------+--------+------------------------------------+
+; LPM_WIDTH      ; 8      ; Untyped                            ;
+; LPM_AVALUE     ; UNUSED ; Untyped                            ;
++----------------+--------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REG0_2:inst1|LPM_LATCH:inst4 ;
++----------------+--------+-------------------------------------------------+
+; Parameter Name ; Value  ; Type                                            ;
++----------------+--------+-------------------------------------------------+
+; LPM_WIDTH      ; 8      ; Untyped                                         ;
+; LPM_AVALUE     ; UNUSED ; Untyped                                         ;
++----------------+--------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REG0_2:inst1|LPM_LATCH:inst5 ;
++----------------+--------+-------------------------------------------------+
+; Parameter Name ; Value  ; Type                                            ;
++----------------+--------+-------------------------------------------------+
+; LPM_WIDTH      ; 8      ; Untyped                                         ;
+; LPM_AVALUE     ; UNUSED ; Untyped                                         ;
++----------------+--------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: REG0_2:inst1|LPM_LATCH:inst6 ;
++----------------+--------+-------------------------------------------------+
+; Parameter Name ; Value  ; Type                                            ;
++----------------+--------+-------------------------------------------------+
+; LPM_WIDTH      ; 8      ; Untyped                                         ;
+; LPM_AVALUE     ; UNUSED ; Untyped                                         ;
++----------------+--------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst6|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst3|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst4|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_bustri0:inst5|lpm_bustri:lpm_bustri_component ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; LPM_WIDTH      ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_LATCH:inst9 ;
++----------------+--------+------------------------------------+
+; Parameter Name ; Value  ; Type                               ;
++----------------+--------+------------------------------------+
+; LPM_WIDTH      ; 8      ; Untyped                            ;
+; LPM_AVALUE     ; UNUSED ; Untyped                            ;
++----------------+--------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 67                          ;
+; cycloneiii_io_obuf    ; 8                           ;
+; cycloneiii_lcell_comb ; 421                         ;
+;     arith             ; 106                         ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 86                          ;
+;     normal            ; 315                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 70                          ;
+;         3 data inputs ; 52                          ;
+;         4 data inputs ; 191                         ;
+;                       ;                             ;
+; Max LUT depth         ; 11.20                       ;
+; Average LUT depth     ; 7.30                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+    Info: Processing started: Thu Dec 30 15:41:15 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_MD -c ALU_MD
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file my_alu.v
+    Info (12023): Found entity 1: my_alu File: D:/quartus17setup/ProjectFile/Project6_3/my_alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file reg0_2.bdf
+    Info (12023): Found entity 1: REG0_2
+Info (12021): Found 1 design units, including 1 entities, in source file ldr0_2.bdf
+    Info (12023): Found entity 1: LDR0_2
+Info (12021): Found 1 design units, including 1 entities, in source file alu_md.bdf
+    Info (12023): Found entity 1: ALU_MD
+Info (12127): Elaborating entity "ALU_MD" for the top level hierarchy
+Info (12128): Elaborating entity "my_alu" for hierarchy "my_alu:inst12"
+Info (12128): Elaborating entity "LPM_LATCH" for hierarchy "LPM_LATCH:inst8"
+Info (12130): Elaborated megafunction instantiation "LPM_LATCH:inst8"
+Info (12133): Instantiated megafunction "LPM_LATCH:inst8" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "8"
+Warning (12125): Using design file lpm_bustri0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: lpm_bustri0-SYN File: D:/quartus17setup/ProjectFile/Project6_3/lpm_bustri0.vhd Line: 55
+    Info (12023): Found entity 1: lpm_bustri0 File: D:/quartus17setup/ProjectFile/Project6_3/lpm_bustri0.vhd Line: 45
+Info (12128): Elaborating entity "lpm_bustri0" for hierarchy "lpm_bustri0:inst2"
+Info (12128): Elaborating entity "lpm_bustri" for hierarchy "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component" File: D:/quartus17setup/ProjectFile/Project6_3/lpm_bustri0.vhd Line: 74
+Info (12130): Elaborated megafunction instantiation "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component" File: D:/quartus17setup/ProjectFile/Project6_3/lpm_bustri0.vhd Line: 74
+Info (12133): Instantiated megafunction "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component" with the following parameter: File: D:/quartus17setup/ProjectFile/Project6_3/lpm_bustri0.vhd Line: 74
+    Info (12134): Parameter "lpm_width" = "8"
+    Info (12134): Parameter "lpm_type" = "LPM_BUSTRI"
+Info (12128): Elaborating entity "LDR0_2" for hierarchy "LDR0_2:inst"
+Info (12128): Elaborating entity "74139M" for hierarchy "LDR0_2:inst|74139M:inst"
+Info (12130): Elaborated megafunction instantiation "LDR0_2:inst|74139M:inst"
+Info (12128): Elaborating entity "REG0_2" for hierarchy "REG0_2:inst1"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component|dout[7]" to the node "lpm_latch:inst8|latches[7]" into an OR gate File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf Line: 43
+    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component|dout[6]" to the node "lpm_latch:inst8|latches[6]" into an OR gate File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf Line: 43
+    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component|dout[5]" to the node "lpm_latch:inst8|latches[5]" into an OR gate File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf Line: 43
+    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component|dout[4]" to the node "lpm_latch:inst8|latches[4]" into an OR gate File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf Line: 43
+    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component|dout[3]" to the node "lpm_latch:inst8|latches[3]" into an OR gate File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf Line: 43
+    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component|dout[2]" to the node "lpm_latch:inst8|latches[2]" into an OR gate File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf Line: 43
+    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component|dout[1]" to the node "lpm_latch:inst8|latches[1]" into an OR gate File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf Line: 43
+    Warning (13047): Converted the fan-out from the tri-state buffer "lpm_bustri0:inst2|lpm_bustri:lpm_bustri_component|dout[0]" to the node "lpm_latch:inst8|latches[0]" into an OR gate File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_bustri.tdf Line: 43
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst4|latches[7] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst4|latches[6] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst4|latches[5] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst4|latches[4] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst4|latches[3] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst4|latches[2] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst4|latches[1] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst4|latches[0] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst5|latches[7] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst6|latches[7] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst5|latches[6] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst6|latches[6] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst5|latches[5] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst6|latches[5] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst5|latches[4] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst6|latches[4] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst5|latches[3] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst6|latches[3] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst5|latches[2] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst6|latches[2] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst5|latches[1] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst6|latches[1] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst5|latches[0] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Warning (13012): Latch REG0_2:inst1|lpm_latch:inst6|latches[0] has unsafe behavior File: d:/quartus17setup/quartus/libraries/megafunctions/lpm_latch.tdf Line: 53
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IR[1]
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 488 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 27 input pins
+    Info (21059): Implemented 40 output pins
+    Info (21061): Implemented 421 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 59 warnings
+    Info: Peak virtual memory: 4799 megabytes
+    Info: Processing ended: Thu Dec 30 15:41:25 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
+
+

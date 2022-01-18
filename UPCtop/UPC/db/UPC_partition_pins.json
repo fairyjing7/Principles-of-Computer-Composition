@@ -1,0 +1,261 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DOUT_B",
+					"strict" : false
+				},
+				{
+					"name" : "M[24]",
+					"strict" : false
+				},
+				{
+					"name" : "M[23]",
+					"strict" : false
+				},
+				{
+					"name" : "M[22]",
+					"strict" : false
+				},
+				{
+					"name" : "M[21]",
+					"strict" : false
+				},
+				{
+					"name" : "M[20]",
+					"strict" : false
+				},
+				{
+					"name" : "M[19]",
+					"strict" : false
+				},
+				{
+					"name" : "M[18]",
+					"strict" : false
+				},
+				{
+					"name" : "M[17]",
+					"strict" : false
+				},
+				{
+					"name" : "M[16]",
+					"strict" : false
+				},
+				{
+					"name" : "M[15]",
+					"strict" : false
+				},
+				{
+					"name" : "M[14]",
+					"strict" : false
+				},
+				{
+					"name" : "M[13]",
+					"strict" : false
+				},
+				{
+					"name" : "M[12]",
+					"strict" : false
+				},
+				{
+					"name" : "M[11]",
+					"strict" : false
+				},
+				{
+					"name" : "M[10]",
+					"strict" : false
+				},
+				{
+					"name" : "M[9]",
+					"strict" : false
+				},
+				{
+					"name" : "M[8]",
+					"strict" : false
+				},
+				{
+					"name" : "M[7]",
+					"strict" : false
+				},
+				{
+					"name" : "M[6]",
+					"strict" : false
+				},
+				{
+					"name" : "M[5]",
+					"strict" : false
+				},
+				{
+					"name" : "M[4]",
+					"strict" : false
+				},
+				{
+					"name" : "M[3]",
+					"strict" : false
+				},
+				{
+					"name" : "M[2]",
+					"strict" : false
+				},
+				{
+					"name" : "M[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LDIR",
+					"strict" : false
+				},
+				{
+					"name" : "RS_B",
+					"strict" : false
+				},
+				{
+					"name" : "RD_B",
+					"strict" : false
+				},
+				{
+					"name" : "RJ_B",
+					"strict" : false
+				},
+				{
+					"name" : "SW_B",
+					"strict" : false
+				},
+				{
+					"name" : "RAM_B",
+					"strict" : false
+				},
+				{
+					"name" : "LDRI",
+					"strict" : false
+				},
+				{
+					"name" : "LDDR1",
+					"strict" : false
+				},
+				{
+					"name" : "LDDR2",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD",
+					"strict" : false
+				},
+				{
+					"name" : "LDAR",
+					"strict" : false
+				},
+				{
+					"name" : "PC_B",
+					"strict" : false
+				},
+				{
+					"name" : "ALU_B",
+					"strict" : false
+				},
+				{
+					"name" : "SFT_B",
+					"strict" : false
+				},
+				{
+					"name" : "uA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "uA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "uA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "uA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "uA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "uA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
+					"name" : "T1",
+					"strict" : false
+				},
+				{
+					"name" : "T3",
+					"strict" : false
+				},
+				{
+					"name" : "T2",
+					"strict" : false
+				},
+				{
+					"name" : "FC",
+					"strict" : false
+				},
+				{
+					"name" : "FZ",
+					"strict" : false
+				},
+				{
+					"name" : "IR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SWB",
+					"strict" : false
+				},
+				{
+					"name" : "IR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SWA",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

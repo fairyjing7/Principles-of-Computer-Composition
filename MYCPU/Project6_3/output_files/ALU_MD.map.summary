@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Dec 30 15:41:25 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : ALU_MD
+Top-level Entity Name : ALU_MD
+Family : Cyclone 10 LP
+Total logic elements : 421
+    Total combinational functions : 421
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 67
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

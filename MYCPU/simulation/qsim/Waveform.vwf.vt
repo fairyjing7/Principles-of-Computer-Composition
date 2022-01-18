@@ -1,0 +1,185 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "01/06/2022 16:23:02"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          MYCPU
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module MYCPU_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg [7:0] IN;
+reg RST;
+reg STEP;
+// wires                                               
+wire [7:0] ALU;
+wire ALU_B;
+wire [7:0] AR;
+wire [7:0] BUS;
+wire [7:0] DOUT;
+wire [7:0] DR1;
+wire [7:0] DR2;
+wire FC;
+wire [7:0] IR;
+wire LDAR;
+wire LDDR1;
+wire LDDR2;
+wire LDIR;
+wire LDPC;
+wire LOAD;
+wire [24:1] M;
+wire OUT_B;
+wire [7:0] PC;
+wire PC_B;
+wire [7:0] R0;
+wire [7:0] RAM;
+wire RAM_B;
+wire RAMWE;
+wire SW_B;
+wire T1;
+wire T2;
+wire T3;
+wire T4;
+wire [5:0] uA;
+
+// assign statements (if any)                          
+MYCPU i1 (
+// port map - connection between master ports and signals/registers   
+	.ALU(ALU),
+	.ALU_B(ALU_B),
+	.AR(AR),
+	.BUS(BUS),
+	.CLK(CLK),
+	.DOUT(DOUT),
+	.DR1(DR1),
+	.DR2(DR2),
+	.FC(FC),
+	.IN(IN),
+	.IR(IR),
+	.LDAR(LDAR),
+	.LDDR1(LDDR1),
+	.LDDR2(LDDR2),
+	.LDIR(LDIR),
+	.LDPC(LDPC),
+	.LOAD(LOAD),
+	.M(M),
+	.OUT_B(OUT_B),
+	.PC(PC),
+	.PC_B(PC_B),
+	.R0(R0),
+	.RAM(RAM),
+	.RAM_B(RAM_B),
+	.RAMWE(RAMWE),
+	.RST(RST),
+	.STEP(STEP),
+	.SW_B(SW_B),
+	.T1(T1),
+	.T2(T2),
+	.T3(T3),
+	.T4(T4),
+	.uA(uA)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #500 1'b1;
+	#500;
+end 
+
+// RST
+initial
+begin
+	RST = 1'b0;
+	RST = #20000 1'b1;
+	RST = #10000 1'b0;
+end 
+
+// STEP
+always
+begin
+	STEP = 1'b0;
+	STEP = #4000 1'b1;
+	#4000;
+end 
+// IN[ 7 ]
+initial
+begin
+	IN[7] = 1'b0;
+	IN[7] = #310000 1'b1;
+	IN[7] = #670000 1'b0;
+end 
+// IN[ 6 ]
+initial
+begin
+	IN[6] = 1'b1;
+	IN[6] = #300000 1'b0;
+end 
+// IN[ 5 ]
+initial
+begin
+	IN[5] = 1'b0;
+	IN[5] = #310000 1'b1;
+	IN[5] = #670000 1'b0;
+end 
+// IN[ 4 ]
+initial
+begin
+	IN[4] = 1'b1;
+	IN[4] = #300000 1'b0;
+end 
+// IN[ 3 ]
+initial
+begin
+	IN[3] = 1'b0;
+end 
+// IN[ 2 ]
+initial
+begin
+	IN[2] = 1'b1;
+	IN[2] = #300000 1'b0;
+	IN[2] = #10000 1'b1;
+	IN[2] = #670000 1'b0;
+end 
+// IN[ 1 ]
+initial
+begin
+	IN[1] = 1'b1;
+	IN[1] = #300000 1'b0;
+end 
+// IN[ 0 ]
+initial
+begin
+	IN[0] = 1'b0;
+	IN[0] = #310000 1'b1;
+	IN[0] = #670000 1'b0;
+end 
+endmodule
+

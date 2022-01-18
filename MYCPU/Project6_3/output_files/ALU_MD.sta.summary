@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'IR[0]'
+Slack : -8.802
+TNS   : -190.117
+
+Type  : Slow 1200mV 100C Model Setup 'LDDR1'
+Slack : -7.587
+TNS   : -59.067
+
+Type  : Slow 1200mV 100C Model Setup 'LDDR2'
+Slack : -7.561
+TNS   : -58.964
+
+Type  : Slow 1200mV 100C Model Hold 'IR[0]'
+Slack : 1.005
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'LDDR1'
+Slack : 1.047
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'LDDR2'
+Slack : 1.062
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'IR[0]'
+Slack : -3.210
+TNS   : -71.558
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'LDDR1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'LDDR2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV -40C Model Setup 'IR[0]'
+Slack : -7.764
+TNS   : -167.022
+
+Type  : Slow 1200mV -40C Model Setup 'LDDR1'
+Slack : -6.679
+TNS   : -52.022
+
+Type  : Slow 1200mV -40C Model Setup 'LDDR2'
+Slack : -6.659
+TNS   : -51.912
+
+Type  : Slow 1200mV -40C Model Hold 'IR[0]'
+Slack : 0.962
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'LDDR2'
+Slack : 0.994
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'LDDR1'
+Slack : 0.995
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'IR[0]'
+Slack : -3.210
+TNS   : -69.419
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'LDDR1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'LDDR2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV -40C Model Setup 'IR[0]'
+Slack : -4.246
+TNS   : -86.441
+
+Type  : Fast 1200mV -40C Model Setup 'LDDR1'
+Slack : -3.021
+TNS   : -23.401
+
+Type  : Fast 1200mV -40C Model Setup 'LDDR2'
+Slack : -3.021
+TNS   : -23.396
+
+Type  : Fast 1200mV -40C Model Hold 'LDDR2'
+Slack : 0.349
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'IR[0]'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'LDDR1'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'IR[0]'
+Slack : -3.000
+TNS   : -57.791
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'LDDR1'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'LDDR2'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Dec 30 23:57:56 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : MYCPU
+Top-level Entity Name : MYCPU
+Family : Cyclone 10 LP
+Device : 10CL055YF484I7G
+Timing Models : Final
+Total logic elements : 770 / 55,856 ( 1 % )
+    Total combinational functions : 739 / 55,856 ( 1 % )
+    Dedicated logic registers : 158 / 55,856 ( < 1 % )
+Total registers : 158
+Total pins : 138 / 322 ( 43 % )
+Total virtual pins : 0
+Total memory bits : 3,584 / 2,396,160 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 312 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

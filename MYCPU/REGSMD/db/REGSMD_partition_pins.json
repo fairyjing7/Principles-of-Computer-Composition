@@ -1,0 +1,241 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "AR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "AR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "AR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BUS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BUS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BUS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BUS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BUS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BUS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BUS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BUS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RAM[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RAM_B",
+					"strict" : false
+				},
+				{
+					"name" : "PC_B",
+					"strict" : false
+				},
+				{
+					"name" : "LDAR",
+					"strict" : false
+				},
+				{
+					"name" : "T2",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
+					"name" : "RAM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RAM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RAM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RAM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RAM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RAM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RAM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD",
+					"strict" : false
+				},
+				{
+					"name" : "LED_B",
+					"strict" : false
+				},
+				{
+					"name" : "LDIR",
+					"strict" : false
+				},
+				{
+					"name" : "T4",
+					"strict" : false
+				},
+				{
+					"name" : "LDPC",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

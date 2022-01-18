@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/computer/REGSMD/simulation/qsim
+vhard_block
+Z1 !s110 1641106178
+!i10b 1
+!s100 9VRL@YOlld8Bo2zZ93MDG2
+IJAeXn<]>>VjNzHACkOU3;3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1641106177
+Z4 8REGSMD.vo
+Z5 FREGSMD.vo
+L0 2140
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1641106178.000000
+Z8 !s107 REGSMD.vo|
+Z9 !s90 -work|work|REGSMD.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vREGSMD
+R1
+!i10b 1
+!s100 ]z<InVMn]9;8h@10T]b[H3
+I1^fe;k39oo6fLQ[`h?AcQ2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@r@e@g@s@m@d
+vREGSMD_vlg_vec_tst
+R1
+!i10b 1
+!s100 jVRYaU0IGSoVIlR1=SA?90
+IK;E3kGdkn1zf^3n=461L61
+R2
+R0
+w1641106176
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@r@e@g@s@m@d_vlg_vec_tst
